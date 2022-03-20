@@ -10,7 +10,7 @@
 ?>
 
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
-	<nav id="site-navigation" class="primary-navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'webworksdreamsone' ); ?>">
+	<nav id="site-navigation" class="primary-navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'webworksdreams' ); ?>">
 
 		<?php
 		wp_nav_menu(
