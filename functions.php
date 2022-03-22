@@ -257,12 +257,12 @@ function scripts_header(){
 }
 
 function scripts_footer(){
-    //wp_enqueue_script('init', get_template_directory_uri().'/js/init.js', array('jquery'));
+wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/assets/js/navigation.js', array('jquery'), '20160909', true );
 }
 
 add_action('after_setup_theme', 'webworks_dreams_setup');
 add_action('wp_enqueue_scripts', 'scripts_header');
-//add_action('wp_footer', 'scripts_footer');
+add_action('wp_footer', 'scripts_footer');
 
 // SVG Icons class.
 require get_template_directory() . '/classes/class-webworks-dreams-svg-icons.php';

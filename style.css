@@ -1,133 +1,152 @@
-/*
-Theme Name: Lawfirm Sample
-Author: The Dev Drawer
-Description: Sample website created for a sample law firm
-Version: 1.0.0
-*/
-body { 
-    padding:0;
-    margin:0;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    margin:0;
-    margin-bottom:.5rem;
-}
-
-.img-fluid { max-width:100%; height:auto;}
-.text-center { text-align:center; }
-
-.hero-cta {
-    margin-top:30px;
-}
-
-.hero-cta .elementor-icon-box-wrapper { 
-    position:relative;
-    top:-40px;
-}
-
-.strong-view.wpmtst-modern .wpmtst-testimonial-content:before, .strong-view.wpmtst-modern .wpmtst-testimonial-content:after {
-    background: var( --e-global-color-primary ) !important;
-    color: var( --e-global-color-primary ) !important;
-}
-
-.homepage-services {
-    position:relative;
-    min-height:275px;
-    text-align:center;
-    color:#fff;
-}
-
-.homepage-services .content {
-    position: relative;
-    top:-50px;
-}
-
-.homepage-services .icon {
-    background-color: var( --e-global-color-primary );
-    fill: #fff;
-    color:#fff;
-    font-size:33px;
-    padding: 0.7em;
-    border-radius: 50%;
+/* Navigation Menu */
+.main-navigation {
+    margin-top: 24px;
+    margin-top: 1.714285714rem;
     text-align: center;
+}
+.main-navigation li {
+    margin-top: 24px;
+    margin-top: 1.714285714rem;
+    font-size: 12px;
+    font-size: 0.857142857rem;
+    line-height: 1.42857143;
+}
+.main-navigation a {
+    color: #5e5e5e;
+}
+.main-navigation a:hover,
+.main-navigation a:focus {
+    color: #21759b;
+}
+.main-navigation ul.nav-menu,
+.main-navigation div.nav-menu > ul {
+    display: none;
+}
+ 
+.main-navigation ul.nav-menu.toggled-on,
+.menu-toggle {
     display: inline-block;
-    width: 91px;
 }
-
-.practice-area-box {
-    background-color: var( --e-global-color-secondary );
-    padding:25px;
-    margin:15px;
-}
-
-.single-practice-areas .content .elementor-column-wrap, .single-team .content .elementor-column-wrap  {
-    padding:10px;
-}
-
-.single-practice-areas .content h1, .single-team .content h1 {
-    color: var( --e-global-color-primary );
-    font-size:2rem;
-}
-
-.single-practice-areas .content h3 {
-    font-size:1.5rem;
-}
-
-.single-practice-areas .content a {
-    text-decoration: none;
-}
-
-.staff .image-wrapper img {
-    width:100%;
-    height:auto;
-    transition: opacity .4s;
-}
-
-.staff .image-wrapper a:hover > img {
-    opacity: .8;
-}
-
-.staff .team-member-info h2 {
-    margin:0;
-    font-size:2rem;
-}
-
-.staff .team-member-info h2 a {
-    color:#333;
-}
-
-.staff .team-member-info h3m , .single-team .content h2 {
-    margin:0;
-    color:rgba(0,0,0,.5);
-    font-family:var( --e-global-typography-text-font-family );
-    font-size:.8rem;
-    text-transform: uppercase;
-    border-bottom:1px solid rgba(0,0,0,.3);
-    margin-bottom:5px;
-}
-
-.staff .elementor-column {
-    margin-bottom:50px;
-}
-
-.team-section {
-    column-count:2;
-}
-
-.single-team .contact-links i {
-    margin: 0 5px;
-}
-
-@media only screen and (max-width:767px) {
-    .team-section {
-        column-count:1;
+ 
+ 
+@media screen and (min-width: 600px) {
+ 
+.main-navigation ul.nav-menu,
+    .main-navigation div.nav-menu > ul {
+        border-bottom: 1px solid #ededed;
+        border-top: 1px solid #ededed;
+        display: inline-block !important;
+        text-align: left;
+        width: 100%;
     }
-    .subheader {
-        display:none;
+    .main-navigation ul {
+        margin: 0;
+        text-indent: 0;
+    }
+    .main-navigation li a,
+    .main-navigation li {
+        display: inline-block;
+        text-decoration: none;
+    }
+    .main-navigation li a {
+        border-bottom: 0;
+        color: #6a6a6a;
+        line-height: 3.692307692;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    .main-navigation li a:hover,
+    .main-navigation li a:focus {
+        color: #000;
+    }
+    .main-navigation li {
+        margin: 0 40px 0 0;
+        margin: 0 2.857142857rem 0 0;
+        position: relative;
+    }
+    .main-navigation li ul {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        z-index: 1;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+    .main-navigation li ul ul {
+        top: 0;
+        left: 100%;
+    }
+    .main-navigation ul li:hover > ul,
+    .main-navigation ul li:focus > ul,
+    .main-navigation .focus > ul {
+        border-left: 0;
+        clip: inherit;
+        overflow: inherit;
+        height: inherit;
+        width: inherit;
+    }
+    .main-navigation li ul li a {
+        background: #efefef;
+        border-bottom: 1px solid #ededed;
+        display: block;
+        font-size: 11px;
+        font-size: 0.785714286rem;
+        line-height: 2.181818182;
+        padding: 8px 10px;
+        padding: 0.571428571rem 0.714285714rem;
+        width: 180px;
+        width: 12.85714286rem;
+        white-space: normal;
+    }
+    .main-navigation li ul li a:hover,
+    .main-navigation li ul li a:focus {
+        background: #e3e3e3;
+        color: #444;
+    }
+    .main-navigation .current-menu-item > a,
+    .main-navigation .current-menu-ancestor > a,
+    .main-navigation .current_page_item > a,
+    .main-navigation .current_page_ancestor > a {
+        color: #636363;
+        font-weight: bold;
+    }
+    .menu-toggle {
+        display: none;
+    }
+     
     }
 
-    .elementor-social-icons-wrapper.elementor-grid {
-        margin: 0 auto;
-    }
+
+.site-header {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
 }
+
+.site-branding {
+    display: flex;
+}
+
+.site-nav-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-title {
+    margin: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.site-logo {
+    margin: 0px 15px;
+    max-width: 75px;
+    max-height: 50px;
+    color: rgb(75, 85, 99);
+    font-size: 2rem;
+    line-height: 1.75rem;
+}
+
