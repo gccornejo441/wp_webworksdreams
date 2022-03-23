@@ -267,6 +267,8 @@ add_action('wp_footer', 'scripts_footer');
 // SVG Icons class.
 require get_template_directory() . '/classes/class-webworks-dreams-svg-icons.php';
 
+// Enhance the theme by hooking into WordPress.
+require get_template_directory() . '/inc/template-functions.php';
 
 /**
  * Calculate classes for the main <html> element.

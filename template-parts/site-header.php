@@ -13,8 +13,11 @@ $wrapper_classes .= ( true === get_theme_mod( 'display_title_and_tagline', true 
 $wrapper_classes .= has_nav_menu( 'primary' ) ? ' has-menu' : '';
 ?>
 
+
+<div class="banner">
+    <?php get_template_part( 'template-parts/site-banner' ); ?>
+</div>
 <header id="masthead" class="<?php echo esc_attr( $wrapper_classes ); ?>">
     <?php get_template_part( 'template-parts/site-branding' ); ?>
 	<?php get_template_part( 'template-parts/site-nav' ); ?>
-
 </header><!-- #masthead -->

@@ -11,7 +11,7 @@
 
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
 	<nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'webworksdreams' ); ?>">
-          <button class="menu-toggle">Menu</button>
+
 		<?php
 		wp_nav_menu(
 			array(
