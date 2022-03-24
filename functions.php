@@ -22,8 +22,8 @@ if (! function_exists('setup')):
 		set_post_thumbnail_size( 1568, 9999 );
         register_nav_menus(
 			array(
-				'primary' => esc_html__( 'Primary menu', 'webworks_dreams' ),
-				'footer'  => esc_html__( 'Secondary menu', 'webworks_dreams' ),
+				'primary' => esc_html__( 'Primary menu', 'webworksdreams' ),
+				'secondary'  => esc_html__( 'Secondary menu', 'webworksdreams' ),
 			)
 		);
 
@@ -273,7 +273,7 @@ require get_template_directory() . '/inc/template-functions.php';
 /**
  * Calculate classes for the main <html> element.
  *
- * @since Twenty Twenty-One 1.0
+ * @since WebWorks Dreams 1.0
  *
  * @return void
  */
@@ -281,7 +281,7 @@ function webworksdreams_the_html_classes() {
 	/**
 	 * Filters the classes for the main <html> element.
 	 *
-	 * @since Twenty Twenty-One 1.0
+	 * @since WebWorks Dreams 1.0
 	 *
 	 * @param string The list of classes. Default empty string.
 	 */

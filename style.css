@@ -135,3 +135,10 @@ a {
     background-color: #5cbdb9;
 }
 
+
+.main-banner {
+	display: flex;
+	justify-content: space-between;
+}
+
+
