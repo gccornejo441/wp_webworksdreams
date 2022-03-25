@@ -239,3 +239,4 @@ class Webworks_Dreams_SVG_Icons {
 	}
 
 }
+

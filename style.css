@@ -142,3 +142,80 @@ a {
 }
 
 
+/* Social Icons ------------------------------ */
+
+ul.social-icons {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	margin: -0.9rem 0 0 -0.9rem;
+	width: calc(100% + 0.9rem);
+}
+
+ul.social-icons li {
+	margin: 0.9rem 0 0 0.9rem;
+}
+
+.social-icons a {
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	text-decoration: none;
+	transition: transform 0.15s ease-in-out;
+	width: 2rem;
+}
+
+.social-icons a:focus,
+.social-icons a:hover {
+	transform: scale(1.1);
+	text-decoration: none;
+}
+
+
+/* Banner SOCIAL */
+
+svg * {
+	fill: currentColor;
+}
+
+
+.svg-icon {
+	color: #fff;
+}
+.banner-social-wrapper {
+	margin: 0;
+	width: 100%;
+	display: flex;
+	padding: 0px 5px;
+}
+
+.has-banner-menu .banner-social-wrapper {
+	flex-shrink: 0;
+	margin-left: 1rem;
+	width: 50%;
+}
+
+ul.banner-social {
+	margin: -0.5rem 0 0 -0.5rem;
+}
+
+.has-banner-menu .banner-social {
+	justify-content: flex-end;
+}
+
+ul.banner-social li {
+	margin: 0.5rem 0 0 0.5rem;
+}
+
+.banner-social a {
+	color: #fff;
+}
+
+.banner-social a::before {
+	font-size: 1.6rem;
+}
+
+.menu-social-container {
+	display: flex;
+}

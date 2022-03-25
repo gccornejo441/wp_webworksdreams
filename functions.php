@@ -23,7 +23,7 @@ if (! function_exists('setup')):
         register_nav_menus(
 			array(
 				'primary' => esc_html__( 'Primary menu', 'webworksdreams' ),
-				'secondary'  => esc_html__( 'Secondary menu', 'webworksdreams' ),
+				'social'  => esc_html__( 'Social menu', 'webworksdreams' ),
 			)
 		);
 
