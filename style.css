@@ -2,6 +2,7 @@
 :root {
   --global-font: 'Montserrat', sans-serif;
   --global-font-color: #374151;
+  --global-font-banner-color: #5cbdb9
 }
 
 * {
@@ -132,7 +133,7 @@ a {
 **/
 
 .banner {
-    background-color: #5cbdb9;
+    background-color: var(--global-font-banner-color);
 }
 
 
@@ -218,4 +219,89 @@ ul.banner-social li {
 
 .menu-social-container {
 	display: flex;
+}
+
+/* Footer */
+
+.site-footer {
+	display: flex;
+	padding: 2rem 4rem;
+}
+
+.footer-navigation {
+}
+
+.site-info {
+	border: 2px solid blue;
+}
+
+.footer-navigation-wrapper {
+	font-size: 1rem;
+	font-weight: 300;
+	margin-left: 1rem;
+}
+
+
+/**
+* Primary Sub-Menu Styles
+*
+**/
+
+
+ul.nav-menu  {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.nav-menu  > li {
+  color: #fff;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+  
+.nav-menu  > li a {
+  color: #374151;
+}
+
+ul.nav-menu li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.primary-menu-container > ul li ul {
+  background: #fff;
+  visibility: hidden;
+  border: 0.5px solid #999999;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  right: 0;
+  display: none;
+}
+
+.primary-menu-container > ul li:hover > ul,
+.primary-menu-container > ul li:focus-within > ul, /* this is the line we add */
+.primary-menu-container > ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul.primary-menu-container > li ul li {
+  clear: both;
+  width: 100%;
+}
+
+@media (max-width: 780px) {
+	ul.nav-menu {
+	display:flex;
+	flex-direction: column;
+}
 }

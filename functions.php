@@ -24,6 +24,7 @@ if (! function_exists('setup')):
 			array(
 				'primary' => esc_html__( 'Primary menu', 'webworksdreams' ),
 				'social'  => esc_html__( 'Social menu', 'webworksdreams' ),
+				'footer'  => esc_html__( 'Footer menu', 'webworksdreams' ),
 			)
 		);
 
