@@ -3,6 +3,8 @@
   --global-font: 'Montserrat', sans-serif;
   --global-font-color: #374151;
   --global-font-banner-color: #5cbdb9;
+  --global-font-text-color: #507977;
+  --font-headings: Montserrat;
 
   /* Font Family */
 	--global--font-primary: var(--font-headings, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
@@ -303,8 +305,6 @@ a {
 	text-decoration: none;
 }
 
-
-
 .site-logo {
 	margin: 0;
 	font-size: 1.45em;
@@ -330,8 +330,6 @@ a {
 .nav-menu a:hover {
 	color: var(--global-font-color);
 }
-
-
 
 .site-header {
 	padding-top: .5em;
@@ -388,7 +386,9 @@ a {
     .site-title {
         margin: 5px 15px;
         font-family: var(--global-font);
-        font-size: 2rem;
+        font-size: 1.4rem;
+		font-weight: 400;
+
 }
 
 }
@@ -634,8 +634,285 @@ div.home-main-container {
 }
 
 
-.services-container {
+.centering-container {
 	display: flex;
 	justify-content: center;
 	margin: 5rem 0rem;
+	padding: 0px 2rem;
+}
+
+.centering-container-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.centering-container-col > div {
+	margin: 0px auto;
+}
+
+.icon-centering-container {
+    display: flex;
+    justify-content: end;
+}
+
+/* Mobile responsiveness */
+
+
+.service-button  {
+	margin-top: 1.5rem;
+	display: flex;
+	justify-content: center !important;
+}
+
+.seo-button {
+	margin-top: 1.5rem;
+}
+
+.services-container-body > div > h2  {
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.services-container-body > div > p  {
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.slidein, .slidein-2 {
+	display: flex;
+	justify-content: center;
+	padding: 3rem;
+}
+
+.services-mobile {
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+}
+
+
+@media (min-width: 600px) {
+	.services-mobile {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+}
+}
+
+/* Above mobile responsiveness */
+
+@media (min-width: 768px) {
+	.services-container-body > div > h2 {
+	font-family: var(--heading--font-family);
+	font-weight: 700;
+	font-size: 2rem;
+	text-align: left;
+}
+
+
+.services-container-body > div > p  {
+	text-align: left;
+	font-size: 1rem;
+}
+.slidein {
+  animation-duration: 1.3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:0%;
+  }
+
+  to {
+    margin-left: 8%;
+  }
+}
+
+.slidein-2 {
+  animation-duration: 1.3s;
+  animation-name: slidein-2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein-2 {
+  from {
+    margin-left:8%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.service-button  {
+	margin-top: 1.5rem;
+	display: flex;
+	justify-content: flex-start !important;
+}
+
+}
+
+
+@media (min-width: 1024px) {
+	.services-container-body > div > h2 {
+	font-family: var(--heading--font-family);
+	font-weight: 700;
+	font-size: 3rem;
+  line-height: 1;
+	text-align: left;
+}
+
+
+.services-container-body > div > p  {
+	text-align: left;
+	font-size: 1.25rem;
+    line-height: 1.75rem;
+	color: var(--global-font-text-color);
+}
+
+.hero-text-container > div > h2 {
+	font-family: var(--heading--font-family);
+	font-weight: 700;
+	font-size: 4.5rem;
+    line-height: 1;
+	text-align: left;
+}
+
+.hero-text-container > div > p  {
+	text-align: left;
+	margin: 2rem 0rem;
+	font-size: 1.25rem;
+    line-height: 1.75rem;
+	color: var(--global-font-text-color);
+}
+
+}
+
+.service-button > div > a  { 
+ 	padding: 0.5rem 1rem !important;
+}
+
+.web-frameworks-icons {
+	margin: 2rem 0rem;
+	flex-wrap: nowrap;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 2rem;
+}
+
+.webframe-icon {
+	margin-left: 0rem !important;
+}
+
+
+/* Hero Styles */
+.hero-buttons {
+	display:flex;
+	justify-content: center;
+	margin: 2.3rem 0rem;
+}
+
+.hero-buttons > div > a {
+	padding: 0.5rem 1rem !important;
+}
+
+.hero-container-center {
+	text-align: center;
+}
+
+.hero-text-container {
+	display:flex;
+	flex-direction: column;
+}
+
+
+.hero-text-container > div > h2 {
+	font-family: var(--heading--font-family);
+	font-weight: 700;
+	font-size: 2.8rem;
+  	line-height: 1;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+
+	.service-button > div > a  {
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.service-button > div > a{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.service-button > div > a:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.service-button > div > a:hover{
+  padding-right: 24px;
+  padding-left: 15px;
+}
+
+.service-button > div > a:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.hero-text-container {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.hero-buttons {
+	display:flex;
+	justify-content: start;
+	margin: 2.3rem 0rem;
+}
+
+.hero-text-container > div > h2 {
+	font-family: var(--heading--font-family);
+	font-weight: 700;
+	font-size: 3rem;
+  	line-height: 1;
+	text-align: left;
+}
+
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+.hero-text-container > div > h2 {
+	font-family: var(--heading--font-family);
+	font-weight: 700;
+	font-size: 4.5rem;
+    line-height: 1;
+	text-align: left;
+}
+
+.hero-text-container > div > p  {
+	text-align: left;
+	margin: 2rem 0rem;
+	font-size: 1.25rem;
+    line-height: 1.75rem;
+	color: var(--global-font-text-color);
+}
+
 }
