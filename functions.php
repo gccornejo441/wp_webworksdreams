@@ -293,3 +293,5 @@ function webworksdreams_the_html_classes() {
 	}
 	echo 'class="' . esc_attr( $classes ) . '"';
 }
+
+
