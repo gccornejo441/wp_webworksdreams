@@ -23,6 +23,7 @@ if (! function_exists('setup')):
         register_nav_menus(
 			array(
 				'primary' => esc_html__( 'Primary menu', 'webworksdreams' ),
+				'mobile'   => __( 'Mobile Menu', 'webworksdreams' ),
 				'social'  => esc_html__( 'Social menu', 'webworksdreams' ),
 				'footer'  => esc_html__( 'Footer menu', 'webworksdreams' ),
 			)
@@ -258,7 +259,7 @@ function scripts_header(){
 }
 
 function scripts_footer(){
-wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/assets/js/navigation.js', array('jquery'), '20160909', true );
+wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/assets/js/navigation.js' );
 }
 
 add_action('after_setup_theme', 'webworks_dreams_setup');
