@@ -18,7 +18,8 @@
 
 
 	<footer id="colophon" class="site-footer">
-        <?php if ( has_nav_menu( 'footer' ) ) : ?>
+        <div class="main-footer">
+            <?php if ( has_nav_menu( 'footer' ) ) : ?>
             <div class="site-info">
                 <div class="site-name">
                     <?php if ( has_custom_logo() ) : ?>
@@ -85,6 +86,11 @@
 		</ul>
 	</nav><!-- #site-navigation -->
 <?php endif; ?>
+
+        </div>
+<div class="copyright">
+<span>Copyright © 2022 WebWorksDreams</span>
+</div>
 
 	</footer><!-- #colophon -->
 
