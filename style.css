@@ -1426,3 +1426,131 @@ button#wpforms-submit-406:hover {
 .contact-body {
 	max-width: 70%;
 }
+
+.overview-hero {
+	margin: 0px auto;
+	padding: 0rem 1.2rem;
+	text-align: center;
+}
+
+.overview-head {
+	font-size: 2rem;
+	padding: 0rem 1.2rem;
+}
+
+.office-img > figure {
+	margin: 0rem !important;
+}
+
+img.wp-image-474 {
+	margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+	.overview-hero {
+	margin: 0px auto;
+	padding: 0rem 1.2rem;
+	text-align: left;
+}
+.overview-hero > div > p {
+font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.overview-head {
+	font-size: 3rem;
+  line-height: 1;
+}
+}
+
+
+/* checkout */
+.pricing-header-text, .portfolio-header {
+	  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.pricing-description {
+	  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.pricing-header-subtext, .portfolio-subheader {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.pricing-center {
+	display: flex;
+	justify-content: center;
+}
+
+.pricing-card {
+	padding: 1.875rem;
+	border-radius: 10px;
+}
+
+.pricing-card-header {
+	font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.pricing-card-subheader {
+	 font-size: 3rem;
+  line-height: 1;
+}
+
+.pricing-card-list {
+	 font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.pricing-card-list > li::before {
+	 content: "✓";
+	 position: relative;
+	 padding: 0px 10px;
+}
+
+.pricing-card-list > li {
+	 padding: 1.5rem 0rem;
+}
+
+.pricing-card-btn {
+	 font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+#blog-btn > a{
+	border: 2px solid #ffb647;
+  transition: background-color 0.2s ease-in !important;
+}
+#busi-btn > a {
+		border: 2px solid #9dd7d5;
+  transition: background-color 0.2s ease-in !important;
+}
+
+#upg-btn > a {
+		border: 2px solid #b3a3ff;
+  transition: background-color 0.2s ease-in !important;
+}
+
+#blog-btn > a:hover,
+#busi-btn > a:hover,
+#upg-btn > a:hover {
+  background-color: transparent !important;
+}
+
+
+/* Portfolio */
+
+.portfolio-center {
+	display: flex;
+	justify-content: center;
+}
+
+.portfolio-center-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
