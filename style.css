@@ -1541,6 +1541,30 @@ font-size: 1.5rem;
   background-color: transparent !important;
 }
 
+.pricing-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.pricing-flex > div {
+	margin: 1rem !important;
+	
+}
+
+.pricing-card-upgrade {
+	flex-basis: content!important;
+}
+
+@media (min-width: 1024px) {
+	.pricing-flex {
+		display: flex;
+		flex-direction: row;
+	}
+	.pricing-card-upgrade {
+	flex-basis: 0%!important;
+}
+}
+
 
 /* Portfolio */
 
@@ -1553,4 +1577,53 @@ font-size: 1.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.portfolio-cards {
+	display: flex;
+	flex-direction: column;
+}
+
+.portfolio-cards > div {
+	margin: 2rem;
+}
+
+.portfolio-cards > div {
+	flex-basis: content!important;
+}
+
+.portfolio-header {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+    padding: 0rem 1.25rem;
+}
+
+.portfolio-subheader {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 1024px) {
+	.portfolio-cards {
+	display: flex;
+	flex-direction: row;
+}
+.portfolio-header {
+  font-size: 4.5rem;
+  line-height: 1;
+  padding: 0rem 1.25rem;
+}
+
+.portfolio-subheader {
+   font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+}
+
+.portfolio-image > figure > img {
+	border-radius: 5px !important;
+}
+
+.portfolio-image > figure > img:hover {
+	background-color: rgba(255, 255, 255, 0.322);
 }
